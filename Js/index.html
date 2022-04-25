@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+<meta charset="UTF-8">
+<meta name ="viewport" content="width=device-width,initial-scale=1.0">
+<title>Dev Portfolio Website</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<link rel="stylesheet" href="/Css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class ="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class = "nav__list">
+                    <li class="nav__item"><a href="#Hem" class="nav__link">Hem</a></li>
+                    <li class="nav__item"><a href="#Erfarenheter" class="nav__link">Erfarenheter</a></li>
+                    <li class="nav__item"><a href="#Om-mig" class="nav__link">Om mig</a></li>
+                    <li class="nav__item"><a href="#Kontakt" class="nav__link">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Introduction-->
+        <section class ="intro" id="Hem">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong><br>Susanne Westerberg</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Artist</p>
+            <img src="/Image/mammatalar.jpeg" alt="en bild på min mor" class="intro__img">
+        </section>
+
+        <!--My Work-->
+        <section class="my-services" id="Erfarenheter">
+            <h2 class="section__title section__title--services">Erfarenheter</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Paint</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Cumque consequatur optio architecto voluptatibus
+                        nesciunt. Reiciendis?</p>
+                </div> <!--service-->
+
+                <div class="service">
+                    <h3>Paint</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Cumque consequatur optio architecto voluptatibus
+                        nesciunt. Reiciendis?</p>
+                </div> <!--service-->
+
+                <div class="service">
+                    <h3>Paint</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Cumque consequatur optio architecto voluptatibus
+                        nesciunt. Reiciendis?</p>
+                </div> <!--service-->
+            </div><!--service--> 
+
+            <button type="button" class="btn">Mer info
+                <div class="content">
+                    <p id="#textcontent" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, voluptates.</p>
+                </div>
+            </button>
+        </section>
+
+        <!--About me-->
+        <section class="about-me" id="Om-mig">
+            <h2 class =section__title section__title--about>Om mig</h2>
+            <p class ="section__subtitle section__subtitle--about">Konstnär från Varberg</p>
+
+            <div class="about-me__body">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, illum.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, dolorem!</p>
+            </div>
+            <img src="/Image/mamma.jpg" alt="grå bild på min mor" class="about-me__img" >
+
+            <section class="my-work" id="work">
+                <h2 class="section__title">Mitt arbete</h2>
+                    <p class="section__subtitle">Lite av min konst</p>
+
+                <div class ="portfolio">
+                    <!--Porfolio item 01-->
+                    <a href="#" class="portfolio__item">
+                        <img src="/Image/bild1.jpg" alt="målning av mor" class="portfolio__img">
+                    </a>
+
+                    <!--Porfolio item 02-->
+                   <!-- <a href="#" class="portfolio__item">
+                        <img src="/Image/IMG_8280.jpg" alt="målning av mor"class="portfolio__img">
+                    </a>-->
+
+                    <!--Porfolio item 03-->
+                    <a href="#" class="portfolio__item">
+                        <img src="/Image/bild4.jpg" alt="målning av mor"class="portfolio__img">
+                    </a>
+
+                    <!--Porfolio item 04-->
+                    <a href="#" class="portfolio__item">
+                        <img src="/Image/bild4.jpg" alt="målning av mor"class="portfolio__img">
+                    </a>
+
+                </div>
+            </section>
+        </section>
+
+        <!--Footer-->
+    <footer>
+        <section class="kontakt" id="Kontakt" ></section>
+        <a href="mailto:hello@mamma.se" class="footer__link">hello@mamma.se</a>
+            <ul class ="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://spotify.com">
+                            <i class="fa-brands fa-spotify">
+                            </i>
+                        </a>
+                    </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://facebook.com">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://instagram.com">
+                        <i class="fa-brands fa-twitter">                            
+                        </i>
+                    </a>
+                </li>
+            </ul>
+    </footer>
+    
+    <script src="index.js"></script>
+    </body>
+</html>

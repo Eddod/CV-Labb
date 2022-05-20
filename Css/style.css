@@ -334,6 +334,7 @@ header{
 .about-me{
   position:relative;
   margin: 0;
+  max-width: 1000px;
 }
 .about-me__img{
   box-shadow: var(--bs);
@@ -457,7 +458,7 @@ footer{
   padding-right: 1rem;
 }
 
-.neon-button{
+#neon-button{
   
   --clr-neon: hsl(317 100% 54%);
   display: inline-block;
@@ -481,7 +482,7 @@ footer{
   
 }
 
-.neon-button::before{
+#neon-button::before{
   pointer-events: none;
   content: "";
   position: absolute;
@@ -498,7 +499,7 @@ footer{
   
 
 }
-.neon-button::after{
+#neon-button::after{
   content:"";
   position:absolute;
   top:0;
@@ -514,14 +515,14 @@ footer{
   border-radius: 0.25em;
 }
 
-.neon-button:hover,
-.neon-button:focus{
+#neon-button:hover,
+#neon-button:focus{
   background: var(--clr-neon);
   color: var(--clr-bg);
   text-shadow:none;
   
 }
 
-.neon-button:hover::after{
+#neon-button:hover::after{
   opacity:1;
 }

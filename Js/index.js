@@ -32,13 +32,7 @@ for (i = 0; i < coll.length; i++) {
 }
 
 
-//NEON BUTTON
-const neonbtn = document.getElementById("neon-button");
 
-neonbtn.addEventListener('click',() => {
-  console.log('button has been pressed, time to party')
-document.body.style.backgroundColor='hsl(317 100% 54%)';
-});
 
 
 //JSON FILER JS
@@ -76,4 +70,31 @@ const cv = fetch("./CV.json")
 
     servicesContainer.appendChild(serviceDivElement)
   })
+});
+
+
+//NEON BUTTON EASTEREGG
+const neonbtn = document.getElementById("neon-button");
+
+neonbtn.addEventListener('click',() => {
+  console.log('button has been pressed, time to party')
+document.body.style.backgroundColor='hsl(317 100% 54%)';
+});
+
+//FEST EASTEREGG
+const sequence = "fest"
+let input=""
+
+document.addEventListener('keydown', (event) => {
+
+    input+= event.key;
+    console.log(input);
+
+if(input.length > 4 && input!= sequence){
+  input=""
+}
+else if(input === sequence){
+  alert('DAGS FÖR KALAS')
+  document.body.style.backgroundColor='salmon';
+}
 });
